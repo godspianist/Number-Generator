@@ -23,7 +23,7 @@ namespace NumberGenerator
         {
             start = 0001;
             stop = 1000;
-            Gstart = 1;
+            Gstart = 0001;
             Gstop = 1000;
         }
 
@@ -35,7 +35,7 @@ namespace NumberGenerator
         private void Timer_Tick(object sender, EventArgs e)
         {
             Random randNum = new Random();
-            for (int i = 0; i <= 500; i++)
+            for (int i = 0; i <= 400; i++)
             {
                 number.Text = randNum.Next(start, stop).ToString();
             }
